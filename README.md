@@ -11,7 +11,7 @@ ce qui nous permettra de déterminer si un train est plus prioritaire que l'autr
 Tout les 2 tours, les locomotives doivent partir en sens inverse.
 
 
-##Choix de l'implémentation
+## Choix de l'implémentation
 
 Nous avons la choisi la maquette A pour cette implémentation.
 
@@ -21,19 +21,19 @@ Nous avons définis les 3 priorités comme ci-dessous:
 - La priorité 1. Donne la priorité à la locomotive n’exploitant pas la voie d’évitement. L’autre locomotive doit donc toujours utiliser la voie d’évitement. Il faut écrire "Priorite_1" pour la sélectionner dans le programme.
 - La priorité 2. Donne la priorité à la locomotive exploitant la voie d’évitement. L’autre locomotive ne doit plus du tout pouvoir accéder au tronçon commun. Il faut écrire "Priorite_2" pour la sélectionner dans le programme.
 
-###cppmain
+### cppmain
 
 Classe principale du programme.
 Initialise les locomotives et les lances en faisant appel à la méthode start().
 Fixe les aiguillages, seules les aiguillages liés à la section critiques vont bouger après coup.
 Ecoute le champ texte en attente d'une commande venant modifier les prioritées et modifie les prioritées en conscéquence.
 
-###locomotive
+### locomotive
 
 Classe qu'on utilise pour définir les locomotives et gérer leur fonctionnement lors de l'éxécution du programme.
 Cette classe fait toute la partie gestion du parcours des locomotives (zone critique, invertion et priorité).
 
-##Tests Simulation :
+## Tests Simulation :
 
 Les tests suivant sont ceux qu'on a effectué au fur à mesure de notre développement.
 
@@ -47,5 +47,5 @@ Les tests suivant sont ceux qu'on a effectué au fur à mesure de notre dévelop
 * Test de la simulation pendant plusieurs minutes, pour vérifier le bon fonctionnement sur la durée.
 
 
-##Tests maquette :
+## Tests maquette :
 Malheureusement, nous n'avons pas testé notre sur la maquette et donc nous ne somme pas sur de son bon fonctionnement sur celle-ci.
